@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting for user</title>
+</head>
+<body>
+    <h1>Challenge 2: website</h1>
+    <h3>Description: Create a web page that greets the user by name.</h3>
+    <h2>Write your name below</h2>
+    <br><input id="userInput">  <br> <br>
+    <button onclick="helloUser()"> Show Message </button>
+
+    <h1 id="message">...</h1>
+
+    
+    <style>
+
+        body{background-color: slategrey; text-align: center;}
+
+    </style>
+
+    <script>
+        function helloUser(){
+
+            let userInput = document.querySelector("#userInput");
+            let message = document.querySelector("#message");
+
+            message.innerHTML = "Welcome " + userInput.value;
+        }
+    </script>
+    <br><br><br><br>
+    <a href="index.html">Return to main page</a>
+</body>
+</html>
